@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title-container {
+  height: 120px;
+}
+
+#title-container h1 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+#graph-container {
+  height: 380px;
+  flex: 2 1 auto;
+}
+
+#graph-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#form-container {
+  height: 150px;
+}
+
+#form {
+  width: 30%;
+  height: 20%;
+  text-align: center;
+  display: flex;
+}
+
+#input-field {
+  flex: 2 1 0;
+  border: 0;
+  border-bottom: 1px solid #99a3a4;
+  outline: 0;
+}
+
+#submit-button {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+}
+
+.submit-button {
+  background-color: #3498db;
+}
+
+.submit-button:hover {
+  background-color: #2e86c1;
+}
+
+.submit-button:active {
+  background-color: #2874a6;
+  color: #d0d3d4;
+}
+
+.cancel-button {
+  background-color: #cb4335;
+}
+
+.cancel-button:hover {
+  background-color: #b03a2e;
+}
+
+.cancel-button:active {
+  background-color: #943126;
+  color: #d0d3d4;
+}
