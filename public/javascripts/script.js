@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!submitted) {
 
-            fetch("https://tall-simple-leopon.glitch.me/app.js", {
+            fetch("/update", {
                 method: "POST",
-                headers: {"Content-Type": "/update"},
                 body: {"name": foodName}
             }).then((res) => console.log(res));
 
@@ -25,9 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } else {
 
-            fetch("https://tall-simple-leopon.glitch.me/app.js", {
+            fetch("/update", {
                 method: "POST",
-                headers: {"Content-Type": "/delete"},
                 body: {"name": foodName}
             }).then((res) => console.log(res));
 
